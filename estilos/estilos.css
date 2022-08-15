@@ -63,7 +63,68 @@ body::-webkit-scrollbar-thumb{
     border-radius: 10px;    
 }
 
+header{
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
 
+header nav{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+#btnToggle{
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    transition: .2s;
+}
+#btnToggle:hover{
+    opacity: .9;
+    transition: .2s;
+}
+#btnToggle:active{
+    transform: translateX(-2px);
+}
+
+.inactive{
+    transform: translateY(-100px);
+    transition: .4s;
+}
+
+.navLista{
+    display: flex;
+    align-items: center;
+    background-color: var(--color2);
+    margin-left: 10px;
+    box-shadow: -2px -2px 1px var(--color4);
+    transition: .4s;
+}
+
+.navLista-item{
+    padding: 8px;
+    margin: 0 2em;
+}
+
+.navLista-item a{
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--color1);
+    font-weight: 700;
+    font-family: var(--font2);
+    transition: .2s;
+
+}
+
+.navLista-item:hover a{
+    color: var(--color4);
+    transition: .2s;
+}
 
 /* seccion parallax */
 .portada{
@@ -391,7 +452,7 @@ body::-webkit-scrollbar-thumb{
     position: absolute;
     top: 55vh;
     left: -20vw;
-    animation-name: rotarPlanetaMarte, moverPlanetaMarte;
+    animation-name: moverPlanetaMarte;
     animation-duration: 300s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -400,21 +461,12 @@ body::-webkit-scrollbar-thumb{
 /*animacion de planeta*/
 @keyframes moverPlanetaMarte {
     0%{
-        transform: translateX(0);
+        transform: translateX(0) rotateZ(0deg);
     }
     100%{
-        transform: translateX(150vw);
+        transform: translateX(150vw) rotateZ(180deg);
     }
 }
-@keyframes rotarPlanetaMarte {
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(180deg);
-    }
-}
-
 
 /*responsive*/
 @media (max-width: 992px){

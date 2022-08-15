@@ -18,3 +18,24 @@ window.addEventListener('scroll', function(){
     btn.style.marginTop = value * 1.5 + 'px';
 });
 
+//menu toggle
+const btnToggle = document.querySelector('#btnToggle');
+const navLista = document.querySelector('.navLista');
+const navEnlace1 = document.querySelector('.navEnlace1');
+const navEnlace2 = document.querySelector('.navEnlace2');
+const navEnlace3 = document.querySelector('.navEnlace3');
+
+btnToggle.addEventListener('click', mostrarMenu);
+function mostrarMenu(){
+    navLista.classList.toggle('inactive');
+}
+
+navEnlace1.addEventListener('click',cerrarMenu);
+navEnlace2.addEventListener('click',cerrarMenu);
+navEnlace3.addEventListener('click',cerrarMenu);
+function cerrarMenu(){
+    navLista.classList.toggle('inactive');
+}
+
+
+
