@@ -1,0 +1,444 @@
+/*importacion de fuentes*/
+@font-face {
+    font-family: 'Gameplay';
+    src: url(/fonts/Gameplay.ttf);
+}
+@font-face {
+    font-family: 'Musicnet';
+    src: url(/fonts/MUSICNET.ttf);
+}
+@font-face {
+    font-family: 'abduction2002';
+    src: url(/fonts/abduction2002.ttf);
+}
+@font-face {
+    font-family: 'digitalism';
+    src: url(/fonts/digitalism.ttf);
+}
+@font-face {
+    font-family: 'Arcade-Classic';
+    src: url(/fonts/ARCADECLASSIC.TTF);
+}
+
+/*z index orden
+titulo(txt) => 10
+btn(txt) => 10
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+:root{
+    --color1: #e31f7b;
+    --color2: #110620;
+    --color3: #af1868;
+    --color4: #791149;
+    --font1: 'Gameplay';
+    --font2: 'Musicnet';
+    --font3: 'abduction2002';
+    --font4: 'digitalism';
+    --font5: 'Arcade-Classic';
+    --marginTop: 50px;
+    --marginTopResp: 30px;
+    --paddingTop: 10vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* barra de scroll */
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--color2);
+}
+body::-webkit-scrollbar-thumb{
+    border: 1px solid var(--color2);
+    background: linear-gradient(180deg, rgba(17,6,32,1) 0%, rgba(198,26,118,1) 30%);
+    border-radius: 10px;    
+}
+
+
+
+/* seccion parallax */
+.portada{
+    background: linear-gradient(180deg, rgba(17,6,32,1) 0%, rgba(198,26,118,1) 57%, rgba(17,6,32,1) 100%);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.portada img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#astronauta{
+    z-index: 20;
+}
+#piso{
+    z-index: 15;
+}
+
+#titulo{
+    position: absolute;
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: var(--color2);
+    text-shadow: 
+                -1px -1px var(--color1),
+                -2px -2px var(--color3);
+    transform: translateY(-180px);
+    z-index: 10;
+}
+
+#btn{
+    font-family: var(--font5);
+    font-size: 1.8vmax;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: var(--color2);
+
+    transform: translateY(-80px);
+    text-decoration: none;
+    z-index: 10;
+
+    animation-name: aparecerTexto;
+    animation-duration: .9s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+/*animaciones del btn*/
+@keyframes aparecerTexto{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .9;
+    }
+    90%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* seccion acerca de */
+.acerca{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color2);
+    padding-top: var(--paddingTop);
+    overflow: hidden;
+}
+
+#imgAcerca{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.subtitulo{
+    margin: 0 auto;
+    font-size: 5vw;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--color1);
+}
+
+.nosotrosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 500px;
+    padding: 20px;
+    margin-top: var(--marginTop);
+
+    background-color: var(--color1);
+    box-shadow: -3px -3px 1px var(--color3);
+    color: var(--color2);
+    z-index: 1;
+}
+
+.nosotrosContainer h3{
+    font-size: 5vmin;
+    font-family: var(--font2);
+    font-weight: 700;
+    text-shadow: 
+                -1px -1px var(--color3),
+                -2px -2px var(--color3),
+                -3px -3px var(--color3);
+}
+
+.nosotrosContainer p{
+    font-size: 2vmin;
+    font-family: var(--font2);
+    font-weight: 700;
+    margin: 1.5vh;
+    line-height: 1.3em;
+    
+}
+
+.btnGeneral{
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 2.5vmin;
+    text-decoration: none;
+    color: var(--color2);
+    background-color: var(--color1);
+    padding: 8px 12px;
+    margin-top: var(--marginTopResp);
+    box-shadow: -3px -3px 1px var(--color3);
+    text-shadow: 
+                -1px -1px var(--color3),
+                -2px -2px var(--color3);
+}
+
+.btnGeneral:hover{
+    opacity: .7;
+}
+
+/* contacto */
+.contactoSeccion{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(to top, rgba(17,6,32,1) 0%, rgba(198,26,118,1) 50%, rgba(17,6,32,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--paddingTop);
+}
+
+#pisoUpDown{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.contactoSeccion h2{
+    color: var(--color2);
+    z-index: 1;
+}
+
+.formContainer{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: var(--marginTop);
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.formContainer form input{
+    outline: none;
+    border: none;
+    background-color: var(--color2);
+    width: 100%;
+    padding: 12px;
+    font-size: 2em;
+    font-family: var(--font2);
+    color: var(--color1);
+    font-weight: 700;
+    letter-spacing: 3px;
+    box-shadow: -3px -3px 2px var(--color4);
+}
+
+.formContainer form input:nth-child(2){
+    margin-top: 20px;
+}
+
+.formContainer form input::placeholder{
+    color: var(--color3);
+    opacity: .2;
+    font-size: .8em;
+}
+
+.formContainer form input:active{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.formContainer form textarea::placeholder{
+    color: var(--color3);
+    opacity: .2;
+    font-size: .8em;
+}
+
+.formContainer form textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: var(--color2);
+    font-size: 2em;
+    font-family: var(--font2);
+    color: var(--color1);
+    font-weight: 700;
+    letter-spacing: 3px;
+    box-shadow: -3px -3px 2px var(--color4);
+}
+
+.formContainer form button{
+    outline: none;
+    border: none;
+
+    padding: 12px 16px;
+    background-color: var(--color2);
+    font-size: 2em;
+    font-family: var(--font2);
+    color: var(--color4);
+    font-weight: 700;
+    letter-spacing: 10px;
+    box-shadow: -3px -3px 2px var(--color4);
+}
+
+.formContainer form button:hover{
+    cursor: pointer;
+    color: var(--color1);
+}
+
+.formContainer form button:active{
+    box-shadow: none;
+    transform: translate(-2px, -2px);
+}
+
+.alienContainer{
+    height: 200px;
+    width: 200px; 
+    background-image: url(../multi/alienDark.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#goBackBtn{
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    height: 80px;
+    width: 80px;
+}
+
+#goBackBtn img{
+    height: 100%;
+    transition: .2s;
+    width: 100%;
+    
+}
+
+#goBackBtn:hover{
+    opacity: .8;
+    transition: .2s;
+}
+
+#estrellasUpDown{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    
+}
+
+#marte{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 55vh;
+    left: -20vw;
+    animation-name: rotarPlanetaMarte, moverPlanetaMarte;
+    animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/*animacion de planeta*/
+@keyframes moverPlanetaMarte {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(150vw);
+    }
+}
+@keyframes rotarPlanetaMarte {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+    }
+}
+
+
+/*responsive*/
+@media (max-width: 992px){
+    body{
+        overflow-x: hidden;
+    }
+    #titulo{
+        font-size: 60px;
+        transform: translateY(-150px);
+    }
+    #btn{
+        font-size: 20px;
+        padding: 6px 12px;
+        transform: translateY(-60px);
+    }
+
+    #imgAcerca{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .subtitulo{
+        font-size: 60px;
+    }
+
+}

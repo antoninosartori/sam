@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 7680 4320" style="enable-background:new 0 0 7680 4320;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
+	.st1{clip-path:url(#SVGID_5_);fill:#110620;}
+	.st2{fill:none;}
+</style>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="7209.08,3513.88 6617.65,3580.74 6566.23,3488.16 6442.8,3555.02 6370.8,3529.31 5999.74,3601.31 
+			5367.17,3555.02 5331.94,3488.16 4884.51,3621.88 4838.23,3555.02 4694.23,3627.02 3938.23,3591.02 3753.08,3519.02 
+			3686.23,3457.31 3583.37,3426.45 3629.66,3524.17 3357.08,3593.59 3130.8,3503.59 2662.8,3593.59 2631.94,3544.74 
+			2472.51,3503.59 2302.8,3593.59 2199.94,3503.59 1721.65,3593.59 1526.23,3503.59 -1.06,3741.86 -1.06,4319.74 7678.94,4319.74 
+			7678.94,3778 7491.94,3585.88 7363.37,3426.45 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="0.9986" y1="4320.9961" x2="1.9986" y2="4320.9961" gradientTransform="matrix(0 893.2857 893.2857 0 -3856045 2534.4287)">
+		<stop  offset="0" style="stop-color:#E02074"/>
+		<stop  offset="0.1573" style="stop-color:#D42171"/>
+		<stop  offset="0.4413" style="stop-color:#B42368"/>
+		<stop  offset="0.8168" style="stop-color:#812659"/>
+		<stop  offset="0.9871" style="stop-color:#682852"/>
+		<stop  offset="1" style="stop-color:#682852"/>
+	</linearGradient>
+	<rect x="-1.06" y="3426.45" class="st0" width="7680" height="893.29"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_4_" x="-1.06" y="-0.26" width="7680" height="4320"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st1" d="M-1.06,3784.7l1529-191.97l192,61.71l500.57-34.28l99.43,41.14l133.71-17.14l281.14,46.28l-264,114.86
+		c0,0,250.29,113.14,397.71,102.86l24,34.29l219.43-14.57l-315.43,83.14l874.29,102.86l-421.71,78.86l397.71,13.71
+		c0,0,582.86,85.71,929.14,0c270.86-34.29,500.57-75.43,500.57-75.43l-456-109.71l661.72,13.72l678.86-78.86l-925.71,13.71
+		l349.71-42l-20.57-47.14l486.86-75.43l277.71,6.86l-408-27.43c0,0,452.57-161.14,654.86-192l72,48l92.57-48l92.57,51.43l528-51.43
+		l198.86-92.57l321.75,372.93l-2.75,446.64h-7680V3784.7z"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_6_" x="-1.06" y="-0.26" width="7680" height="4320"/>
+	</defs>
+	<clipPath id="SVGID_7_">
+		<use xlink:href="#SVGID_6_"  style="overflow:visible;"/>
+	</clipPath>
+</g>
+<rect x="-1.06" y="-0.26" class="st2" width="7680" height="4320"/>
+</svg>
