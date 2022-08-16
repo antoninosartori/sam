@@ -169,7 +169,7 @@ header nav{
 }
 
 #btn{
-    font-family: var(--font5);
+    font-family: var(--font5), monospace;
     font-size: 1.8vmax;
     letter-spacing: 1px;
     font-weight: 700;
@@ -553,7 +553,7 @@ header nav{
 
 .animacionSeccion h4{
     font-size: 2em;
-    font-family: var(--font5);
+    font-family: var(--font5), monospace;
     color: var(--color2);
     opacity: .1;
     position: absolute;
