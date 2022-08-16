@@ -8,7 +8,6 @@ const astronauta = document.getElementById('astronauta');
 
 window.addEventListener('scroll', function(){
     let value = this.window.scrollY;
-    console.log(value);
     sol.style.marginTop = value * .5 + 'px';
     estrellas.style.top = value * 1.5 + 'px';
     meteoritos.style.top = value * 1.5 + 'px';
